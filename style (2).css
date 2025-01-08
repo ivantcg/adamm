@@ -1,0 +1,147 @@
+/* main style */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .content {
+    flex: 1 0 auto;
+  }
+  
+  .footer {
+    flex-shrink: 0;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* style index */
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .halo {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-2px);
+  }
+  
+  .social-links a:hover {
+    color: #0a58ca;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .profile-img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* style about */
+  
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1.display-4 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .row {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .col-md-6 {
+    margin-bottom: 2rem;
+  }
+  
+  .skill-bar {
+    height: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    transition: width 1s ease-in-out;
+  }
+  
+  /* style gallery */
+  
+  .gallery-item {
+    margin-bottom: 20px;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* style contact */
+  .contact-info-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+  }
+  
+  .form-floating > label {
+    left: 10px;
+  }
+  
+  .invalid-feedback {
+    font-size: 0.875rem;
+  }
+  
